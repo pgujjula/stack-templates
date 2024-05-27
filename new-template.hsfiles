@@ -69,10 +69,10 @@ tests:
 main :: IO ()
 main = putStrLn "Test suite not yet implemented"
 
-{-# START_FILE src/Lib.hs #-}
+{-# START_FILE src/FibsMod.hs #-}
 -- SPDX-FileCopyrightText: Copyright Preetham Gujjula
 -- SPDX-License-Identifier: BSD-3-Clause
-module Lib (fibsMod) where
+module FibsMod (fibsMod) where
 
 fibsMod :: Word -> [Word]
 fibsMod n = xs
@@ -84,7 +84,7 @@ fibsMod n = xs
 -- SPDX-License-Identifier: BSD-3-Clause
 module Main (main) where
 
-import Lib (fibsMod)
+import FibsMod (fibsMod)
 
 main :: IO ()
 main =
